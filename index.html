@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elektromos Javítási és Karbantartási Munkalap</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Elektromos Javítási és Karbantartási Munkalap</h1>
+    <p><strong>A munkavégző vállalkozó:</strong> Katonás Lajos</p>
+
+    <label for="order-date">A munka megrendelésének időpontja:</label>
+    <div class="dropdowns">
+      <label for="order-year">Év:</label>
+      <select id="order-year"></select>
+  
+      <label for="order-month">Hónap:</label>
+      <select id="order-month"></select>
+  
+      <label for="order-day">Nap:</label>
+      <select id="order-day"></select>
+  
+      <label for="order-hour">Óra:</label>
+      <select id="order-hour"></select>
+  
+      <label for="order-minute">Perc:</label>
+      <select id="order-minute"></select>
+    </div>
+
+    <label for="customer-name">A munka megrendelőjének neve:</label>
+    <input type="text" id="customer-name" placeholder="Írja be a nevet">
+
+    <label for="work-location">A munkavégzés helye:</label>
+    <input type="text" id="work-location" placeholder="Írja be a helyszínt">
+
+    <label for="work-type">A megrendelt munka jellege:</label>
+    <input type="text" id="work-type" placeholder="Írja be a munka jellegét">
+
+    <h2>Munkavégzés adatlap</h2>
+
+    <label for="start-time">A munkavégzés kezdete:</label>
+    <div class="dropdowns">
+      <label for="start-year">Év:</label>
+      <select id="start-year"></select>
+      <label for="start-month">Hónap:</label>
+      <select id="start-month"></select>
+      <label for="start-day">Nap:</label>
+      <select id="start-day"></select>
+      <label for="start-hour">Óra:</label>
+      <select id="start-hour"></select>
+      <label for="start-minute">Perc:</label>
+      <select id="start-minute"></select>
+    </div>
+
+    <label for="car-details">A gépkocsi típusa és rendszáma:</label>
+    <input type="text" id="car-details" placeholder="Írja be az adatokat">
+
+    <label for="work-description">A munkavégzés leírása:</label>
+    <textarea id="work-description" rows="4" placeholder="Írja le a munkát"></textarea>
+
+    <label for="end-time">A munka befejezésének időpontja:</label>
+    <div class="dropdowns">
+      <label for="end-year">Év:</label>
+      <select id="end-year"></select>
+      <label for="end-month">Hónap:</label>
+      <select id="end-month"></select>
+      <label for="end-day">Nap:</label>
+      <select id="end-day"></select>
+      <label for="end-hour">Óra:</label>
+      <select id="end-hour"></select>
+      <label for="end-minute">Perc:</label>
+      <select id="end-minute"></select>
+    </div>
+
+    <h2>Költségek összesítése</h2>
+
+    <label for="material-cost-invoice">Anyagköltség számla száma:</label>
+    <input type="text" id="material-cost-invoice" placeholder="Írja be a számlaszámot">
+
+    <label for="material-cost-amount">Anyagköltség összege (Ft):</label>
+    <input type="number" id="material-cost-amount" placeholder="Írja be az összeget">
+
+    <label for="labor-hours">Felhasznált munkaórák (óra):</label>
+    <input type="number" id="labor-hours" placeholder="Írja be az órák számát">
+
+    <label for="transport-cost">Szállítási költség (Ft):</label>
+    <input type="number" id="transport-cost" placeholder="Írja be a költséget">
+
+    <label for="unit-price">Egységár (Ft):</label>
+    <input type="number" id="unit-price" placeholder="Írja be az egységárat">
+
+    <label for="total-cost">Összesen (Ft):</label>
+    <input type="number" id="total-cost" placeholder="Adja meg az összköltséget">
+
+    <button id="save-pdf">Munkalap Mentése PDF-ben</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
